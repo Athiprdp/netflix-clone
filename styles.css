@@ -1,0 +1,143 @@
+body{
+  background-color: black;
+
+}
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.621)), url(icons/backgrnd\ img.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 80vh;
+}
+@media (max-width: 920px){
+  header {
+    height: 50vh;
+  }
+}
+nav select {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 3px 16px;
+  font-weight: 500;
+  
+}
+nav button:hover {
+  background-color: rgb(189, 9, 9);
+}
+form #email-input{
+  background-color: rgba(0, 0, 0, 0.731);
+  color: white;
+}
+form button::after {
+  content: "\276F";
+  margin-left: 10px;
+}
+header section{
+  box-sizing: border-box;
+  padding-bottom:24px;
+  padding-top: 24px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+.trending-title {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#slider{
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+#slider::-webkit-scrollbar {
+  display: none; 
+}
+
+.card {
+  margin-right: 10px;
+  border: none;
+  position: relative;
+  transition: transform 0.3s ease;
+  min-width:140px;
+  
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card:hover {
+  transform: scale(1.1);
+
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+.scroll-left { left: 10px; }
+.scroll-right { right: 10px; }
+
+@media(max-width: 575.5px){
+  #slider .card {
+    width: 100px;
+  }
+}
+@media(min-width:576px) and (max-width: 768px){
+  #slider .card {
+    width: 140px;
+  }
+}
+@media (min-width: 990px) and (max-width: 1199.5px) {
+  #slider .card {
+    width: 160px;
+  }
+}
+@media(min-width: 1200px){
+  #slider .card {
+    width: 180px;
+  }
+}
+
+.reason-card {
+  background: linear-gradient(135deg, #1a1a2e, #2b2b45);
+  border-radius: 12px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+
+#faq .card:hover {
+  transform: none;
+}
+.card-header a::after {
+  content: "+";
+  font-size: 2rem;
+  color: white;
+}
+.card-header a[aria-expanded="true"]::after {
+  content: "x";
+}
+.card-header:hover{
+  background-color: rgb(49, 45, 45);
+}
+footer div a {
+  color: rgb(253, 252, 252);
+}
+footer div a:hover {
+  color: rgb(253, 252, 252);
+}
